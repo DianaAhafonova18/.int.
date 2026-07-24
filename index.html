@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interpol – розыск</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Подключение шрифта Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Верхняя панель (фиксированная) -->
+  <header class="top-bar">
+    <div class="logo">
+      <!-- СЮДА ДОБАВИТЬ ЛОГОТИП -->
+      <span>INTERPOL</span>
+    </div>
+    <div class="language-selector">
+      <select>
+        <option>Русский</option>
+        <option>English</option>
+        <option>Български</option>
+      </select>
+    </div>
+    <div class="icons">
+      <span class="icon-search">🔍</span>
+      <span class="icon-menu">☰</span>
+    </div>
+  </header>
+
+  <!-- Сетка карточек -->
+  <main class="card-grid">
+    <!-- КАРТОЧКА 1 – неактивная (только для вида) -->
+    <div class="card inactive">
+      <div class="card-image">
+        <img src="images/photo_placeholder.jpg" alt="Фото" />
+        <!-- Здесь значок розыска (оранжевая метка) -->
+        <span class="card-badge" style="background:#E67A2E;">РАЗЫСКИВАЕТСЯ</span>
+        <!-- Фото -->
+      </div>
+      <div class="card-info">
+        <h3 class="card-name">Иван Иванов</h3>
+        <!-- Имя -->
+        <p class="card-age">32 года</p>
+        <!-- Возраст -->
+        <p class="card-country">Россия</p>
+        <!-- Страна -->
+      </div>
+    </div>
+
+    <!-- КАРТОЧКА 2 – РАБОЧАЯ (кликабельная) - это Данило -->
+    <div class="card active" data-target="profile.html">
+      <div class="card-image">
+        <img src="images/photo_danilo.jpg" alt="Фото" />
+        <!-- Фото Данилы -->
+        <span class="card-badge" style="background:#E67A2E;">РАЗЫСКИВАЕТСЯ</span>
+      </div>
+      <div class="card-info">
+        <h3 class="card-name">Нежур Данило</h3>
+        <!-- Имя -->
+        <p class="card-age">21 год (2003 г.р.)</p>
+        <!-- Возраст (рассчитано от 2003) -->
+        <p class="card-country">Болгария</p>
+        <!-- Страна -->
+      </div>
+    </div>
+
+    <!-- КАРТОЧКА 3 – неактивная -->
+    <div class="card inactive">
+      <div class="card-image">
+        <img src="images/photo_placeholder.jpg" alt="Фото" />
+        <span class="card-badge" style="background:#E67A2E;">РОЗЫСК</span>
+      </div>
+      <div class="card-info">
+        <h3 class=
+          "card-name">Петр Петров</h3>
+        <p class="card-age">45 лет</p>
+        <p class="card-country">Украина</p>
+      </div>
+    </div>
+
+    <!-- КАРТОЧКА 4 – неактивная -->
+    <div class="card inactive">
+      <div class="card-image">
+        <img src="images/photo_placeholder.jpg" alt="Фото" />
+        <span class="card-badge" style="background:#E67A2E;">РОЗЫСК</span>
+      </div>
+      <div class="card-info">
+        <h3 class="card-name">Анна Смирнова</h3>
+        <p class="card-age">28 лет</p>
+        <p class="card-country">Беларусь</p>
+      </div>
+    </div>
+
+    <!-- Можно добавить ещё карточек по такому же шаблону -->
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
